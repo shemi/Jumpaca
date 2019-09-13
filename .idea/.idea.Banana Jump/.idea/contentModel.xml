@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\shemi\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\shemi\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Banana Jump.1485938159.00" t="ExcludeRecursive" />
+    <e p="D:\Games\Banana Jump" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GameOverManager.cs" t="Include" />
+        <e p="PlayerStyle.cs" t="Include" />
+        <e p="ScenesManager.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="BananaScripts" t="Include">
+            <e p="Banana.cs" t="Include" />
+          </e>
+          <e p="CameraScripts" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+          </e>
+          <e p="HelpersScripts" t="Include">
+            <e p="BackgroundHelper.cs" t="Include" />
+            <e p="BoundariesManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+            <e p="GameStateManager.cs" t="Include" />
+            <e p="ImageAnimator.cs" t="Include" />
+            <e p="MarketManager.cs" t="Include" />
+            <e p="MenuManager.cs" t="Include" />
+            <e p="ScoreManager.cs" t="Include" />
+            <e p="SliderMovementScript.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
+            <e p="Swipe.cs" t="Include" />
+          </e>
+          <e p="PlatformScripts" t="Include">
+            <e p="PlatformController.cs" t="Include" />
+            <e p="PlatformSpawner.cs" t="Include" />
+          </e>
+          <e p="PlayerScripts" t="Include">
+            <e p="PlayerScript.cs" t="Include" />
+          </e>
+          <e p="SpawnerAndCollectorScripts" t="Include">
+            <e p="Background.cs" t="Include" />
+            <e p="BGSpawner.cs" t="Include" />
+            <e p="Collector.cs" t="Include" />
+            <e p="PlayerItem.cs" t="Include" />
+          </e>
+          <e p="StoreScripts" t="Include">
+            <e p="StoreGridBuilder.cs" t="Include" />
+            <e p="StoreItem.cs" t="Include" />
+          </e>
+          <e p="UIHeaderController.cs" t="Include" />
+        </e>
+        <e p="SlidingNumber.cs" t="Include" />
+        <e p="UIMessageManager.cs" t="Include" />
+      </e>
+      <e p="Banana Jump.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

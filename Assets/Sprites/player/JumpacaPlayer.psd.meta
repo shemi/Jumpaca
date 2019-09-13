@@ -1,0 +1,1186 @@
+fileFormatVersion: 2
+guid: 97aca0b017a84b1498f57ab244c40eae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7203365194970735605
+    second: PlayerWhite
+  - first:
+      213: 19654504721399661
+    second: PlayerPink
+  - first:
+      213: 6688234476281053579
+    second: PlayerBroun
+  - first:
+      213: 7163429825483425899
+    second: PlayerYellow
+  - first:
+      213: 6915831039358913667
+    second: PlayerGray
+  - first:
+      213: 969955920071110276
+    second: CowboyHat
+  - first:
+      213: -5066154334948016394
+    second: Scarf
+  - first:
+      213: 3208938600089356328
+    second: BlueSunHat
+  - first:
+      213: 5773480245186434019
+    second: Collar
+  - first:
+      213: -7075172512503616795
+    second: GoldNecklace
+  - first:
+      213: -4736840300069918230
+    second: SmoothBlondHair
+  - first:
+      213: 929797536318082830
+    second: BlackSunglasses
+  - first:
+      213: -6346703189490630400
+    second: PearlNecklace
+  - first:
+      213: 2126570115613648262
+    second: KareHaircut
+  - first:
+      213: 1486358301710649888
+    second: Heels
+  - first:
+      213: 3771580608885284470
+    second: BlackSunglasses
+  - first:
+      213: -7387198757554156512
+    second: GrandpaBeard
+  - first:
+      213: -8948444832620009472
+    second: SantaHat
+  - first:
+      213: 7727870970657828740
+    second: HeadScarf
+  - first:
+      213: -6223800320397883328
+    second: JumpacaPlayer_19
+  - first:
+      213: -1565030656518409717
+    second: RainBoots
+  - first:
+      213: -5004096597533770365
+    second: JumpacaPlayer_21
+  - first:
+      213: 3650726461400293407
+    second: JumpacaPlayer_22
+  - first:
+      213: 370083969171442832
+    second: JumpacaPlayer_23
+  - first:
+      213: 333738689721437263
+    second: GrayHair
+  - first:
+      213: 5095047461996167003
+    second: SantaHat
+  - first:
+      213: -2182869221513080699
+    second: SupperJump1
+  - first:
+      213: 274008923117894673
+    second: SupperJump2
+  - first:
+      213: 431607296776937536
+    second: SupperJump3
+  - first:
+      213: 1610204309036513105
+    second: RainBootsIcon
+  - first:
+      213: 524196197532476737
+    second: GrayHairIcon
+  - first:
+      213: -8038686082614875617
+    second: HeadScarfIcon
+  - first:
+      213: -2334230201904369489
+    second: SantaHatIcon
+  - first:
+      213: 1470430012539456285
+    second: GrandpaBeardIcon
+  - first:
+      213: -6577256634733175103
+    second: HeelsIcon
+  - first:
+      213: -6559679996537125678
+    second: KareHaircutIcon
+  - first:
+      213: 4748435602544389493
+    second: PearlNecklaceIcon
+  - first:
+      213: -1943234341619152928
+    second: GoldNecklaceIcon
+  - first:
+      213: 2191877515530296898
+    second: SmoothBlondHairIcon
+  - first:
+      213: -8318709475208688730
+    second: BlackSunglassesIcon
+  - first:
+      213: 4327681886678872433
+    second: BlueSunHatIcon
+  - first:
+      213: -8649366051406770269
+    second: CollarIcon
+  - first:
+      213: 431370301639378330
+    second: ScarfIcon
+  - first:
+      213: -6748123666732798568
+    second: CowboyHatIcon
+  - first:
+      213: 333738689721437263
+    second: JumpacaPlayer_24
+  - first:
+      213: -2182869221513080699
+    second: JumpacaPlayer_26
+  - first:
+      213: -5314182093190631925
+    second: SuperJump1
+  - first:
+      213: 3003872272974866012
+    second: SuperJump2
+  - first:
+      213: 6066288561145589332
+    second: SuperJump3
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerWhite
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 5036
+        width: 581
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90c3274540df1a46a76a4121479723e
+      internalID: -7203365194970735605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerPink
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 5036
+        width: 585
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d91b8fc02e2deb41846aabdd66c5bec
+      internalID: 19654504721399661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerBroun
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 5036
+        width: 586
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb733734ec50d1e49ace234599f73444
+      internalID: 6688234476281053579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerYellow
+      rect:
+        serializedVersion: 2
+        x: 3220
+        y: 5031
+        width: 581
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d406df6da7be8ab46b3310ac35ad16ac
+      internalID: 7163429825483425899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerGray
+      rect:
+        serializedVersion: 2
+        x: 4202
+        y: 5026
+        width: 586
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd3cc8b46a4bcb4899de48ea29acd20
+      internalID: 6915831039358913667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowboyHat
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 4435
+        width: 434
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e728bffb29eaaa746b9bf9edd29cba2b
+      internalID: 969955920071110276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scarf
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 4455
+        width: 254
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb302d8a96160340b74bd385c0aae24
+      internalID: -5066154334948016394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueSunHat
+      rect:
+        serializedVersion: 2
+        x: 2312
+        y: 4367
+        width: 449
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c81ea6c580907d43bcf1a7b8903ada7
+      internalID: 3208938600089356328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Collar
+      rect:
+        serializedVersion: 2
+        x: 3347
+        y: 4431
+        width: 278
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03e56ca11db31e44ab6436927713fbb
+      internalID: 5773480245186434019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldNecklace
+      rect:
+        serializedVersion: 2
+        x: 4358
+        y: 4392
+        width: 278
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b62b560ef82c2469e540b764fac500
+      internalID: -7075172512503616795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KareHaircut
+      rect:
+        serializedVersion: 2
+        x: 8333
+        y: 4338
+        width: 327
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f4ba663fef9b40822b0b230405940
+      internalID: 2126570115613648262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heels
+      rect:
+        serializedVersion: 2
+        x: 9314
+        y: 4410
+        width: 440
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2812612fb072e4944a03ce1c6aa3ee56
+      internalID: 1486358301710649888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmoothBlondHair
+      rect:
+        serializedVersion: 2
+        x: 5369
+        y: 4403
+        width: 260
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc107d40640a2547b4ef607345c3e9b
+      internalID: -4736840300069918230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSunglasses
+      rect:
+        serializedVersion: 2
+        x: 6443
+        y: 4460
+        width: 215
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1407d337d6570a743991261e7bac26d3
+      internalID: 929797536318082830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PearlNecklace
+      rect:
+        serializedVersion: 2
+        x: 7395
+        y: 4416
+        width: 278
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb7bc679c05bf74a9e2b447d7aa5336
+      internalID: -6346703189490630400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandpaBeard
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 3371
+        width: 244
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582fd13429539a0498c1bf2048352a20
+      internalID: -7387198757554156512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeadScarf
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 3288
+        width: 303
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949c2fe414e36a84c8c4462ad94ed7b2
+      internalID: 7727870970657828740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_19
+      rect:
+        serializedVersion: 2
+        x: 4297
+        y: 3547
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4d9844ee5f6794faa1668dc8ae6174
+      internalID: -6223800320397883328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RainBoots
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 3370
+        width: 441
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb01301a0b135141b5eb809ce247621
+      internalID: -1565030656518409717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_21
+      rect:
+        serializedVersion: 2
+        x: 4529
+        y: 3540
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dba3ee46a7d9a41b91fb73947238a2
+      internalID: -5004096597533770365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_22
+      rect:
+        serializedVersion: 2
+        x: 4593
+        y: 3532
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6784cc32fb53ab34987defba8cd84985
+      internalID: 3650726461400293407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_23
+      rect:
+        serializedVersion: 2
+        x: 4649
+        y: 3554
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c20dee6a942368458507ce5668e5bea
+      internalID: 370083969171442832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_24
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 3543
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f3fee60b46ca9498629bc6093a6ad7
+      internalID: 333738689721437263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SantaHat
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 3371
+        width: 274
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8131f4bd70d112643989907357bd2809
+      internalID: -8948444832620009472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpacaPlayer_26
+      rect:
+        serializedVersion: 2
+        x: 4546
+        y: 3540
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31155ab71224ee459b919b1ef8d1646
+      internalID: -2182869221513080699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayHair
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 3400
+        width: 205
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510494886d697744781653ef2e3ee055
+      internalID: 333738689721437263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuperJump1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2035
+        width: 790
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dc8404f277578448d82097e713c938
+      internalID: -5314182093190631925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuperJump2
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 2035
+        width: 790
+        height: 970
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828d34369a55fcf408deaafed531f6fe
+      internalID: 3003872272974866012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SuperJump3
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 2034
+        width: 790
+        height: 971
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389cace7489e9414bad5761c12aa4d20
+      internalID: 6066288561145589332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RainBootsIcon
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1077
+        width: 913
+        height: 917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0454bd860556843841f5d47520d22a
+      internalID: 1610204309036513105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrayHairIcon
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 1233
+        width: 913
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5724e43186708441be53a255184eb80
+      internalID: 524196197532476737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeadScarfIcon
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1083
+        width: 717
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68303a1520367f4aba204e73cb0e59e
+      internalID: -8038686082614875617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SantaHatIcon
+      rect:
+        serializedVersion: 2
+        x: 3054
+        y: 1203
+        width: 913
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4999663f4a56c2244b678fab86325fb3
+      internalID: -2334230201904369489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrandpaBeardIcon
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 1135
+        width: 913
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04584eddead999b42bed5500e4cb9299
+      internalID: 1470430012539456285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeelsIcon
+      rect:
+        serializedVersion: 2
+        x: 5056
+        y: 1150
+        width: 913
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7655bf7659d4634aacded83c765286d
+      internalID: -6577256634733175103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KareHaircutIcon
+      rect:
+        serializedVersion: 2
+        x: 6057
+        y: 1203
+        width: 913
+        height: 726
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89605fd28b093a04d902ac8e68f555f4
+      internalID: -6559679996537125678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PearlNecklaceIcon
+      rect:
+        serializedVersion: 2
+        x: 7083
+        y: 1369
+        width: 912
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebabaad42a18c046ab60160337d5a58
+      internalID: 4748435602544389493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoldNecklaceIcon
+      rect:
+        serializedVersion: 2
+        x: 8079
+        y: 1267
+        width: 913
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b559efb61624b439ea081a222a47f4
+      internalID: -1943234341619152928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmoothBlondHairIcon
+      rect:
+        serializedVersion: 2
+        x: 9079
+        y: 1330
+        width: 912
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40719cf18b51bd645b4bfcfecce4bfdf
+      internalID: 2191877515530296898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSunglassesIcon
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 359
+        width: 913
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8031fb07b4042044afdf6ed12dbd74a
+      internalID: -8318709475208688730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueSunHatIcon
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 359
+        width: 913
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4a84e8b112f11429dd93d7893e22e3
+      internalID: 4327681886678872433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CollarIcon
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 398
+        width: 913
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048ded9050fdc6f4e8c433db58d922e9
+      internalID: -8649366051406770269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScarfIcon
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 271
+        width: 912
+        height: 527
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f13499f7ba4e694fa1ebecd6b4c3277
+      internalID: 431370301639378330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CowboyHatIcon
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 388
+        width: 913
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc5e536486f7e9479b9b2cf5ed4e9ec
+      internalID: -6748123666732798568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

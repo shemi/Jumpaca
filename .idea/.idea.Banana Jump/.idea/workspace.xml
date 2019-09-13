@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9caa297b-5d1b-4aa7-8718-5bc8a12cac29" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/SlidingNumber.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/3e/031efc7d/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/Swipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/VertexModifiers/Shadow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Sprites/READ ME.rtf.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/PlayerItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoreScripts/StoreGridBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StoreScripts/StoreItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlatformScripts/PlatformSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/GameStateManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/b1/a1d3def5/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/60/a41d48b1/Math.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/ImageAnimator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/BackgroundHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/2e/d52e84bd/Enum.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/MenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/5e/14291aa5/Bounds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F3D2E207-E921-4C81-9FC0-667490CCBAAC/ce/3b562a18/EditorApplication.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/Collector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/BgSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ScenesManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/59/ab17844b/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/e0/b9a78132/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UIMessageManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/3c/7a61269e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/f6/14a01a8a/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/509B38DE-0BB8-4FDE-A4B2-340764259EC3/25/bdc912da/ParticleSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/4d/ee050c5c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29678BE2-3057-45E2-B09A-C155C8826818/dc/4be73e0d/AudioSource.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/MarketManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Layout/ContentSizeFitter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/17/fabe814c/Camera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/e1/75b4db42/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameOverManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/41214D29-AEF2-49F2-BACE-2A17F5BF98F7/98/6de0ea2c/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.2.1f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BananaScripts/Banana.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C5DC6B49-17B2-4E94-AE43-1E2D91EEAD2C/d5/28279ab3/RectTransformUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HelpersScripts/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIHeaderController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/27/61480bc2/SerializeField.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/Background.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlatformScripts/PlatformController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2CE23092-8A98-496B-A12C-A183760FB5F6/d4/0fce585a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerStyle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/659CD5F0-C4CE-410C-B23A-6CADD71BB76F/3b/46392de1/Int32.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlatformScripts/PlatformController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/Swipe.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BananaScripts/Banana.cs" />
+        <option value="$PROJECT_DIR$/Assets/MenuManeger.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIMonkeyScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/PlayerData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/ImageAnimator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ConfettiWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/SliderMovmentScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/SliderMovementScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/BGSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/Collector.cs" />
+        <option value="$PROJECT_DIR$/Assets/BoundariesManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/BackgroundHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/Background.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerItemsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/PlayerItemsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/PlayerItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/StoreItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/StoreGridBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoreScripts/StoreGridBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/UIMessageManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ScenesManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIHeaderController.cs" />
+        <option value="$PROJECT_DIR$/Assets/PlayerStyle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlatformScripts/PlatformSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/BgCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerScripts/PlayerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/GameStateManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/ScoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameOverManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SlidingNumber.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/MarketManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/MenuManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StoreScripts/StoreItem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerAndCollectorScripts/BgSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HelpersScripts/BackgroundHelper.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PhEbDwgbXuWPPJE2osyjyjQeVU" />
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="SoundManager" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="19312">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="19312" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9caa297b-5d1b-4aa7-8718-5bc8a12cac29" name="Default Changelist" comment="" />
+      <created>1566317997776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566317997776</updated>
+      <workItem from="1566318000619" duration="21665000" />
+      <workItem from="1566679595713" duration="2622000" />
+      <workItem from="1566749949607" duration="13377000" />
+      <workItem from="1566931141271" duration="32494000" />
+      <workItem from="1567697202858" duration="100288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" />
+    <state x="552" y="178" key="#Notifications/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom" />
+    <state width="1877" height="109" key="GridCell.Tab.0.bottom/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.0.center" />
+    <state width="1877" height="109" key="GridCell.Tab.0.center/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.0.left" />
+    <state width="1877" height="109" key="GridCell.Tab.0.left/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right" />
+    <state width="1877" height="109" key="GridCell.Tab.0.right/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.1.bottom" />
+    <state width="1877" height="109" key="GridCell.Tab.1.bottom/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.1.center" />
+    <state width="1877" height="109" key="GridCell.Tab.1.center/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.1.left" />
+    <state width="1877" height="109" key="GridCell.Tab.1.left/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.1.right" />
+    <state width="1877" height="109" key="GridCell.Tab.1.right/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.2.bottom" />
+    <state width="1877" height="109" key="GridCell.Tab.2.bottom/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.2.center" />
+    <state width="1877" height="109" key="GridCell.Tab.2.center/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.2.left" />
+    <state width="1877" height="109" key="GridCell.Tab.2.left/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.2.right" />
+    <state width="1877" height="109" key="GridCell.Tab.2.right/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.3.bottom" />
+    <state width="1877" height="109" key="GridCell.Tab.3.bottom/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.3.center" />
+    <state width="1877" height="109" key="GridCell.Tab.3.center/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.3.left" />
+    <state width="1877" height="109" key="GridCell.Tab.3.left/1920.1080/1920.1080" />
+    <state width="1877" height="109" key="GridCell.Tab.3.right" />
+    <state width="1877" height="109" key="GridCell.Tab.3.right/1920.1080/1920.1080" />
+    <state x="2365" y="162" key="SettingsEditor" />
+    <state x="2365" y="162" key="SettingsEditor/1920.1080/1920.1080" />
+    <state x="2395" y="117" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" />
+    <state x="2395" y="117" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.1080/1920.1080" />
+    <state x="2558" y="190" width="644" height="660" key="find.popup" />
+    <state x="2558" y="190" width="644" height="660" key="find.popup/1920.1080/1920.1080" />
+    <state x="2536" y="240" width="672" height="677" key="run.anything.popup" />
+    <state x="2536" y="240" width="672" height="677" key="run.anything.popup/1920.1080/1920.1080" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/1920.1080/1920.1080" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

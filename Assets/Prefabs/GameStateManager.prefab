@@ -1,0 +1,192 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7526717668718526757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5612576147375083209}
+  - component: {fileID: 4111777114729979757}
+  m_Layer: 0
+  m_Name: GameStateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5612576147375083209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526717668718526757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2348137, y: 3.639815, z: 172.66628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4111777114729979757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526717668718526757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4749e8b85d54f45409931f202bc90d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loaded: 0
+  playerInventoryChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  playerWearsChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  items:
+  - id: BlackSunglasess
+    storeName: Sunglasses
+    category: 2
+    iconSprite: {fileID: -8318709475208688730, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 929797536318082830, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 105
+    position: {x: -1.34, y: 2.26, z: 0}
+  - id: BlueSunHat
+    storeName: Blue sun hat
+    category: 0
+    iconSprite: {fileID: 4327681886678872433, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 3208938600089356328, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 300
+    position: {x: -1.2, y: 3.24, z: 0}
+  - id: Collar
+    storeName: Collar
+    category: 4
+    iconSprite: {fileID: -8649366051406770269, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 5773480245186434019, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 220
+    position: {x: -0.99, y: -0.94, z: 0}
+  - id: CowboyHat
+    storeName: Cowboy Hat
+    category: 0
+    iconSprite: {fileID: -6748123666732798568, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 969955920071110276, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 480
+    position: {x: -1.33, y: 4.39, z: 0}
+  - id: GoldNecklace
+    storeName: Gold necklace
+    category: 4
+    iconSprite: {fileID: -1943234341619152928, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -7075172512503616795, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 1310
+    position: {x: -1.03, y: -1.17, z: 0}
+  - id: GrandpaBeard
+    storeName: Grandpa beard
+    category: 3
+    iconSprite: {fileID: 1470430012539456285, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -7387198757554156512, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 310
+    position: {x: -1.88, y: 1.07, z: 0}
+  - id: GrayHair
+    storeName: Gray Hair
+    category: 1
+    iconSprite: {fileID: 524196197532476737, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 401825526140136492, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 130
+    position: {x: -1.61, y: 3.47, z: 0}
+  - id: HeadScarf
+    storeName: Head scarf
+    category: 0
+    iconSprite: {fileID: -8038686082614875617, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 7727870970657828740, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 705
+    position: {x: -0.89, y: 2.26, z: 0}
+  - id: Heels
+    storeName: Heels
+    category: 5
+    iconSprite: {fileID: -6577256634733175103, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 1486358301710649888, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 910
+    position: {x: 0.25, y: -3.88, z: 0}
+  - id: KareHaircut
+    storeName: Kare haircut
+    category: 1
+    iconSprite: {fileID: -6559679996537125678, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: 2126570115613648262, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 400
+    position: {x: -1.11, y: 2.78, z: 0}
+  - id: PearlNecklace
+    storeName: Pearl necklace
+    category: 4
+    iconSprite: {fileID: 4748435602544389493, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -6346703189490630400, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 1105
+    position: {x: -0.93, y: -0.73, z: 0}
+  - id: RainBoots
+    storeName: Rain boots
+    category: 5
+    iconSprite: {fileID: 1610204309036513105, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -1565030656518409717, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 855
+    position: {x: 0.25, y: -3.88, z: 0}
+  - id: SantaHat
+    storeName: Santa hat
+    category: 0
+    iconSprite: {fileID: -2334230201904369489, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -8948444832620009472, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 50
+    position: {x: -0.43, y: 3.89, z: 0}
+  - id: Scarf
+    storeName: Scarf
+    category: 4
+    iconSprite: {fileID: 431370301639378330, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -5066154334948016394, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 220
+    position: {x: -0.87, y: -0.54, z: 0}
+  - id: SmoothBlondHair
+    storeName: Smooth Blond Hair
+    category: 1
+    iconSprite: {fileID: 2191877515530296898, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    itemSprite: {fileID: -4736840300069918230, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 760
+    position: {x: -1.88, y: 3.59, z: 0}
