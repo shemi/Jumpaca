@@ -10,25 +10,21 @@ public class GameManager : MonoBehaviour
     
     public Transform player;
     public Text scoreText;
-    public Text doubleBananaCountText;
+    public Text comboCountText;
 
     private bool _isGameOver = true;
     
-    private int _doubleBananaCount = 1;
-
     public int score => ScoreManager.instance.score;
     
     public bool isGameOver => _isGameOver;
 
     private bool _newHighScorePlayed = false;
-    
     [SerializeField] private ParticleSystem newHighScorePS;
 
-    [SerializeField]
-    private Background[] backgroundSprites = new Background[0];
+    private int _comboCount = 1;
+    private string _comboType;
     
-    private int _currentBackgroundSpriteIndex = 0;
-
+    
     void Awake()
     {
         if (instance == null)
@@ -55,27 +51,34 @@ public class GameManager : MonoBehaviour
         ScenesManager.instance.GoToMainMenu();
     }
 
-    public void ResetDoubleBananaCount()
+    public int GetComboCount()
     {
-        _doubleBananaCount = 1;
+        return _comboCount;
     }
     
-    public void AddDoubleBananaCount()
+    public void AddComboCount(string type)
     {
-        _doubleBananaCount++;
+        if (type == _comboType)
+        {
+            _comboCount++;
+            return;
+        }
+
+        _comboType = type;
+        _comboCount = 1;
     }
     
     void Update()
     {
         var positionY = player.position.y;
-
-        if (positionY > 0.0f && positionY > score && ! _isGameOver)
+        var newScore = ((int) positionY) - score;
+        
+        if (newScore > 0 && score + newScore > score && ! _isGameOver)
         {
-            var newScore = ((int) positionY) - score;
-            ScoreManager.instance.UpdateScore(score + (newScore * _doubleBananaCount));
+            ScoreManager.instance.UpdateScore(score + (newScore * _comboCount));
         }
         
-        doubleBananaCountText.text = _doubleBananaCount + "X";
+        comboCountText.text = _comboCount + "X";
         scoreText.text = score.ToString();
 
         if (score > ScoreManager.instance.highScore && ! _newHighScorePlayed && ScoreManager.instance.highScore > 0)
@@ -108,24 +111,4 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
     }
 
-    public Sprite GetBackgroundSprite()
-    {
-        Background background = backgroundSprites[_currentBackgroundSpriteIndex];
-
-        if (! background.IsActive())
-        {
-            background.Reset();
-            _currentBackgroundSpriteIndex++;
-
-            if (backgroundSprites.Length <= _currentBackgroundSpriteIndex)
-            {
-                _currentBackgroundSpriteIndex = 0;
-            }
-            
-            background = backgroundSprites[_currentBackgroundSpriteIndex];
-        }
-
-        return background.GetSprite();
-    }
-    
 }

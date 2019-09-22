@@ -13,14 +13,20 @@ public class PlayerScript : MonoBehaviour
     private Rigidbody2D myBody;
 
     public bool disabled = false;
-    
     public float moveSpeed = 10f;
-    public float normalPush = 10f;
-    public float extraPush = 14f;
 
     private bool _initialPush;
 
     private int _pushCount;
+
+    private string _lastFruitType;
+    private int _fruitsCount;
+
+    //SuperJump
+    public Animator superJumpAnimator;
+    public int superJumpComboCount = 3;
+    public float superJumpPushVelocity = 25.0f;
+    private bool _superJumpActive = false;
 
     private void Awake()
     {
@@ -33,11 +39,23 @@ public class PlayerScript : MonoBehaviour
         {
             Move();
         }
+
+        if (_superJumpActive && myBody.velocity.y <= 0.5f)
+        {
+            StopSuperJump();
+        }
     }
 
+    void StopSuperJump()
+    {
+        _superJumpActive = false;
+        superJumpAnimator.SetBool("Show", false);
+        SoundManager.instance.FadeOut("superJump", 0.050f);
+    }
+    
     void Move()
     {
-        if (GameManager.instance.isGameOver)
+        if (GameManager.instance == null || GameManager.instance.isGameOver)
         {
             return;
         }
@@ -54,14 +72,16 @@ public class PlayerScript : MonoBehaviour
 
         if (Math.Abs(slider.value) > 0)
         {
-            if (slider.value > 0 && transform.localScale.x > 0)
+            var localScale = transform.localScale;
+            
+            if (slider.value > 0 && localScale.x > 0)
             {
-                transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+                transform.localScale = new Vector3(localScale.x * -1, localScale.y, localScale.z);
             }
-             
-            if(slider.value < 0 && transform.localScale.x < 0)
+            
+            if(slider.value < 0 && localScale.x < 0)
             {
-                transform.localScale = new Vector3(Math.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                transform.localScale = new Vector3(Math.Abs(localScale.x), localScale.y, localScale.z);
             }
             
             myBody.velocity = new Vector2(slider.value * moveSpeed, myBody.velocity.y);
@@ -74,48 +94,53 @@ public class PlayerScript : MonoBehaviour
         {
             return;
         }
-        
-        if (target.CompareTag("ExtraPush"))
+
+        if (target.CompareTag("Fruit"))
         {
-            if (!_initialPush)
+            Fruit fruit = target.GetComponent<Fruit>();
+            
+            if (! _superJumpActive || myBody.velocity.y <= fruit.pushVelocity)
             {
-                _initialPush = true;
-                myBody.velocity = new Vector2(myBody.velocity.x, 18f);
-                target.GetComponent<Banana>().RemoveBanana();
-                
-                SoundManager.instance.JumpSoundFX();
-                
+                myBody.velocity = new Vector2(myBody.velocity.x, fruit.pushVelocity);
+                GameManager.instance.AddComboCount(fruit.type);
+
+                if (_superJumpActive)
+                {
+                    StopSuperJump();
+                }
+            }
+            
+            fruit.Hit();
+
+            if (! _superJumpActive && GameManager.instance.GetComboCount() >= superJumpComboCount)
+            {
+                _superJumpActive = true;
+                SoundManager.instance.Play("superJump");
+                superJumpAnimator.SetBool("Show", true);
+                GameManager.instance.AddComboCount("");
+                myBody.velocity = new Vector2(myBody.velocity.x, superJumpPushVelocity);
+            }
+            
+        }
+
+        if (target.CompareTag("Enemy"))
+        {
+            Enemy enemy = target.GetComponent<Enemy>();
+
+            if (_superJumpActive)
+            {
+                var rb = target.gameObject.AddComponent<Rigidbody2D>();
+                rb.bodyType = RigidbodyType2D.Dynamic;
+                rb.velocity = myBody.velocity;
+                enemy.TakeHit();
                 return;
             }
-        }
-
-        if (target.CompareTag("NormalPush"))
-        {
-            myBody.velocity = new Vector2(myBody.velocity.x, normalPush);
-            target.GetComponent<Banana>().RemoveBanana();
-            _pushCount++;
             
-            GameManager.instance.ResetDoubleBananaCount();
-            SoundManager.instance.JumpSoundFX();
+            enemy.Die();
+            GameManager.instance.GameOver();
         }
         
-        if (target.CompareTag("ExtraPush"))
-        {
-            myBody.velocity = new Vector2(myBody.velocity.x, extraPush);
-            target.GetComponent<Banana>().RemoveBanana();
-            _pushCount++;
-
-            GameManager.instance.AddDoubleBananaCount();
-            SoundManager.instance.JumpSoundFX();
-        }
-
-        if (_pushCount == 2)
-        {
-            _pushCount = 0;
-            PlatformSpawner.instance.SpawnPlatforms();
-        }
-
-        if (target.CompareTag("FallDown") || target.CompareTag("Bird"))
+        if (target.CompareTag("FallDown"))
         {
             GameManager.instance.GameOver();
         }

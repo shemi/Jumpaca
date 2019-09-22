@@ -10,7 +10,8 @@ public class GameOverManager : MonoBehaviour
     
     public SlidingNumber newCoinsText;
 
-    [SerializeField] private GameObject gameOverPS;
+    [SerializeField] 
+    private GameObject gameOverPS;
 
     private bool _active = false;
 
@@ -39,7 +40,7 @@ public class GameOverManager : MonoBehaviour
 
     public void CoinsCountEnded()
     {
-        if (ScoreManager.instance.GetCoinsFromScore() < 50)
+        if (ScoreManager.instance.GetCoinsFromScore() < 30)
         {
             SoundManager.instance.BooSoundFX();
         }
@@ -49,6 +50,12 @@ public class GameOverManager : MonoBehaviour
         }
         
         SoundManager.instance.PlayBackgroundMusic();
+    }
+
+    public void ResetGame()
+    {
+        SoundManager.instance.FadeOut("coin", 0.010f);
+        GameManager.instance.RestartGame();
     }
     
 }

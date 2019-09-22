@@ -1,36 +1,21 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using Random = UnityEngine.Random;
 
 public class SoundManager : MonoBehaviour
 {
-
     public static SoundManager instance;
 
-    [SerializeField] private AudioSource backgroundMusic;
-    
-    [SerializeField] private AudioSource soundFX, sounds;
-    
-    [SerializeField] private AudioClip gameOverClip, 
-                                       buy,
-                                       error,
-                                       superJumpStart,
-                                       superJumpBlase,
-                                       click,
-                                       coin,
-                                       win,
-                                       boo,
-                                       highScore;
+    public Sound[] sounds;
 
-    [SerializeField] private AudioClip[] jumpClips;
-    
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            CreateAudioSources();
             DontDestroyOnLoad(gameObject);
         }
         else if (instance != this)
@@ -39,82 +24,111 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    private void CreateAudioSources()
+    {
+        foreach (Sound sound in sounds)
+        {
+            sound.setSource(gameObject.AddComponent<AudioSource>());
+        }
+    }
+
+    public Sound GetSound(string soundName)
+    {
+        return Array.Find(sounds, sound => sound.name == soundName);
+    }
+
+    public void Play(string soundName)
+    {
+        GetSound(soundName).Play();
+    }
+    
+    public void Stop(string soundName)
+    {
+        GetSound(soundName).Stop();
+    }
+
+    public void FadeIn(string soundName, float speed)
+    {
+        StartCoroutine(GetSound(soundName).FadeIn(speed));
+    }
+
+    public void FadeOut(string soundName, float speed)
+    {
+        StartCoroutine(GetSound(soundName).FadeOut(speed));
+    }
+    
     public void StopBackgroundMusic()
     {
-        backgroundMusic.Stop();
+        FadeOut("backgroundMusic", 0.015f);
     }
     
     public void PlayBackgroundMusic()
     {
-        if (backgroundMusic.isPlaying)
+        if (GetSound("backgroundMusic").isPlaying)
         {
             return;
         }
         
-        backgroundMusic.Play();
+        FadeIn("backgroundMusic", 0.015f);
     }
     
     public void JumpSoundFX(float delay = 0f)
     {
-        soundFX.clip = jumpClips[Random.Range(0, jumpClips.Length)];
-        soundFX.PlayDelayed(delay);
+        string jumpName = "jump";
+        int jumpNumber = 1;
+
+        if (GameManager.instance)
+        {
+            int count = GameManager.instance.GetComboCount();
+            jumpNumber = count > 4 ? 4 : count;
+        }
+        
+        Play(jumpName+jumpNumber);
     }
     
     public void GameOverSoundFX()
     {
-        soundFX.clip = gameOverClip;
-        soundFX.Play();
+        Play("gameOver");
     }
     
     public void ErrorFX()
     {
-        soundFX.clip = error;
-        soundFX.Play();
+        Play("error");
     }
     
     public void ClickFX()
     {
-        soundFX.clip = click;
-        soundFX.Play();
+        Play("click");
     }
     
     public void BuyFX()
     {
-        soundFX.clip = buy;
-        soundFX.Play();
+        Play("buy");
     }
     
     public void CoinFX(bool loop = false)
     {
-        soundFX.clip = coin;
-        soundFX.loop = loop;
-        
-        soundFX.Play();
+        Play("coin");
     }
     
     public void StopCoinFX()
     {
-        soundFX.loop = false;
-        
-        soundFX.Stop();
+        Stop("coin");
     }
 
     public void BooSoundFX()
     {
-        sounds.clip = boo;
-        sounds.Play();
+        Play("boo");
     }
     
     public void WinSoundFX()
     {
-        sounds.clip = win;
-        sounds.Play();
+        Play("win");
     }
     
     public void HighScoreSoundFX()
     {
-        sounds.clip = highScore;
-        sounds.Play();
+        Play("highScore");
     }
-    
+
 }

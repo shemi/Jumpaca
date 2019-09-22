@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ExtraPush
   - BG
-  - NormalPush
-  - Bird
-  - Platform
   - FallDown
+  - Fruit
+  - Enemy
   layers:
   - Default
   - TransparentFX
