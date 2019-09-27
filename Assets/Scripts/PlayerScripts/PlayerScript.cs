@@ -27,6 +27,12 @@ public class PlayerScript : MonoBehaviour
     public int superJumpComboCount = 3;
     public float superJumpPushVelocity = 25.0f;
     private bool _superJumpActive = false;
+    private bool _isinstanceNull;
+
+    private void Start()
+    {
+        _isinstanceNull = GameManager.instance == null;
+    }
 
     private void Awake()
     {
@@ -55,7 +61,7 @@ public class PlayerScript : MonoBehaviour
     
     void Move()
     {
-        if (GameManager.instance == null || GameManager.instance.isGameOver)
+        if (_isinstanceNull || GameManager.instance.isGameOver)
         {
             return;
         }
@@ -129,9 +135,6 @@ public class PlayerScript : MonoBehaviour
 
             if (_superJumpActive)
             {
-                var rb = target.gameObject.AddComponent<Rigidbody2D>();
-                rb.bodyType = RigidbodyType2D.Dynamic;
-                rb.velocity = myBody.velocity;
                 enemy.TakeHit();
                 return;
             }

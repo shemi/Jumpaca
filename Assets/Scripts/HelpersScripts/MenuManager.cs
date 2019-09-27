@@ -5,6 +5,9 @@ public class MenuManager : MonoBehaviour
     public static MenuManager instance;
 
     public Animator logoAnimator;
+
+    public Leaderboard leaderboard;
+    public FirstTimeController firstTimeController;
     
     private void Awake()
     {
@@ -38,12 +41,27 @@ public class MenuManager : MonoBehaviour
     public void StartGame()
     {
         SoundManager.instance.ClickFX();
-        ScenesManager.instance.GoToGameplay();
+
+        if (GameStateManager.instance.IsLoggedIn())
+        {
+            ScenesManager.instance.GoToGameplay();
+        }
+        else
+        {
+            firstTimeController.Show();
+        }
     }
     
     public void ShowLeaderboard()
     {
         SoundManager.instance.ClickFX();
+        leaderboard.Show();
+    }
+    
+    public void HideLeaderboard()
+    {
+        SoundManager.instance.ClickFX();
+        leaderboard.Hide();
     }
     
     public void GoToStore()

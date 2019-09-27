@@ -47,13 +47,9 @@ MonoBehaviour:
   playerInventoryChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   playerWearsChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   items:
   - id: BlackSunglasess
     storeName: Sunglasses
@@ -190,3 +186,5 @@ MonoBehaviour:
       type: 3}
     price: 760
     position: {x: -1.88, y: 3.59, z: 0}
+  apiUrl: https://jumpaca.lowbudgetgames.com/
+  gameToken: 5jWsyyrVDxsl08lAFK29STXp3vCwYJgR9qn35U

@@ -211,8 +211,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &4074489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,8 +254,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 14
     callback:
       m_PersistentCalls:
@@ -273,8 +269,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &46480996
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,8 +361,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &46480999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,8 +379,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: ebd16f8bb5857ac4db8c6809f59b23b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -608,8 +598,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 9ef84f9770b46424487866306c6c0265, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -702,8 +690,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: beaba15fb9bbb904089861863566c6a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1002,8 +988,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f7e95f53fcd6b644da16b4d19c5e2094, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1093,8 +1077,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ccd1f7d227c7d134788c84538fb3a444, type: 3}
     m_FontSize: 245
@@ -1238,26 +1220,34 @@ MonoBehaviour:
   - {fileID: 4571105705458315150, guid: 0ee29ffe8a219ee41a6782c3e989b540, type: 3}
   - {fileID: 3492772564278476487, guid: 0a019b43d9e19d343a138af3088f3da4, type: 3}
   difficulties:
-  - maxScore: 120
+  - maxScore: 100
     diceSize: 0
     maxEnemiesPerBg: 0
+    skipAssist: 0
     enemiesMoving: 0
-  - maxScore: 300
+  - maxScore: 400
     diceSize: 7
     maxEnemiesPerBg: 1
+    skipAssist: 1
     enemiesMoving: 0
-  - maxScore: 1000
+  - maxScore: 1100
     diceSize: 7
     maxEnemiesPerBg: 2
+    skipAssist: 1
     enemiesMoving: 1
   - maxScore: 1500
     diceSize: 5
     maxEnemiesPerBg: 2
+    skipAssist: 0
     enemiesMoving: 1
   - maxScore: 2147483647
-    diceSize: 2
+    diceSize: 4
     maxEnemiesPerBg: 3
+    skipAssist: 0
     enemiesMoving: 1
+  minDistance: 1.5
+  minX: -2.2
+  maxX: 2.2
 --- !u!4 &809009806
 Transform:
   m_ObjectHideFlags: 0
@@ -1324,9 +1314,9 @@ MonoBehaviour:
   - {fileID: 4968994881117165359, guid: f05a45c47526150469ce6be6c9095cd6, type: 3}
   difficulties:
   - minScore: 0
-    maxScore: 100
+    maxScore: 120
     diceSize: 2
-    maxCombos: 3
+    maxCombos: 7
   - minScore: 201
     maxScore: 500
     diceSize: 5
@@ -1418,7 +1408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 307.56308, y: 0}
+  m_AnchoredPosition: {x: 307.5, y: 0}
   m_SizeDelta: {x: 0, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927024391
@@ -1481,8 +1471,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &927024394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,8 +1489,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ccd1f7d227c7d134788c84538fb3a444, type: 3}
     m_FontSize: 200
@@ -6745,8 +6731,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 956f1de87aa94b54a9a0ce198bfdd106, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -11696,8 +11680,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1503355629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11716,8 +11698,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: e0adf207531f04b41818ecfd75f35928, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -21679,8 +21659,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -21754,8 +21732,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -21831,8 +21807,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ccd1f7d227c7d134788c84538fb3a444, type: 3}
     m_FontSize: 300
@@ -36978,6 +36952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3478744186232733701, guid: e1ad5792fa1acb44a9b42827259cd275,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 4288499435651429056, guid: e1ad5792fa1acb44a9b42827259cd275,
         type: 3}

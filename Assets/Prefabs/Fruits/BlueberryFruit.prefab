@@ -141,6 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 000e39ae6204d694ab0298ca550af3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushVelocity: 9.5
+  pushVelocity: 10.3
   type: blueberry
   isInitialPush: 0

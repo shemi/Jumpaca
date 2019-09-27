@@ -49,6 +49,7 @@ public class UIHeaderController : MonoBehaviour
     public void Back()
     {
         SoundManager.instance.ClickFX();
+        SoundManager.instance.StopCoinFX();
         ScenesManager.instance.Back();
     }
 

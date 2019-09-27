@@ -46,7 +46,7 @@ MonoBehaviour:
   sounds:
   - name: backgroundMusic
     clip: {fileID: 8300000, guid: 91d0fddb094c596499e7750a2589c85b, type: 3}
-    volume: 0.2
+    volume: 0.15
     pitch: 1
     loop: 1
     playOnAwake: 1
@@ -67,7 +67,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: click
     clip: {fileID: 8300000, guid: f87540e04be905d4e92f9483f384c1f9, type: 3}
-    volume: 1
+    volume: 0.8
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -115,8 +115,8 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: error
-    clip: {fileID: 8300000, guid: c0fa3921c20a03c47aca6c09169c4412, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 9e3d4e0511ca6e84287a6a8dd9cf3404, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -143,28 +143,28 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: birdDie
-    clip: {fileID: 8300000, guid: 10f51c9a4c9408e498642da310dd5e5e, type: 3}
-    volume: 0.8
+    clip: {fileID: 8300000, guid: 1d460150c1d60e740970a726e2d4519c, type: 3}
+    volume: 0.9
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: birdHit
-    clip: {fileID: 8300000, guid: 10f51c9a4c9408e498642da310dd5e5e, type: 3}
+    clip: {fileID: 8300000, guid: 26bad783ee17b24448ffa5a024816afe, type: 3}
     volume: 0.8
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: beeDie
-    clip: {fileID: 8300000, guid: 10f51c9a4c9408e498642da310dd5e5e, type: 3}
-    volume: 0.8
+    clip: {fileID: 8300000, guid: 0ae5922339062044ea96d947e23f7647, type: 3}
+    volume: 0.9
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: beeHit
-    clip: {fileID: 8300000, guid: 10f51c9a4c9408e498642da310dd5e5e, type: 3}
+    clip: {fileID: 8300000, guid: da808eaaa67053042969f18a2552c00b, type: 3}
     volume: 0.8
     pitch: 1
     loop: 0

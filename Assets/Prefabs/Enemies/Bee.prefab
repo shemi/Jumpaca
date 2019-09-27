@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4571105705458315151}
   - component: {fileID: 5863966446278690302}
   - component: {fileID: 7816393564045072690}
+  - component: {fileID: 477851716}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Enemy
@@ -131,3 +132,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: bee
+--- !u!50 &477851716
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571105705458315150}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 1
+  m_Mass: 0.28024644
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 4c7f976d2b5f66f47a7b8b50224bb981, type: 2}
+  m_Interpolate: 0
+  m_SleepingMode: 2
+  m_CollisionDetection: 0
+  m_Constraints: 0

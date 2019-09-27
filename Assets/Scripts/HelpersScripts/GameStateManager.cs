@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -34,13 +35,20 @@ public class GameStateManager : MonoBehaviour
     
     public int Coins => _state.coins;
     
-    public string PlayerId => _state.perezGamesPlayerId;
+    public string PlayerId => _state.lpgPlayerId;
+    
+    //API
+    public string apiUrl = "";
+    public string gameToken = "";
+
+    private ApiService _service;
 
     void Awake()
     {
         if (instance == null)
         {
             instance = this;
+            _service = new ApiService(apiUrl, gameToken);
             DontDestroyOnLoad(this);
             Load();
         }
@@ -227,6 +235,26 @@ public class GameStateManager : MonoBehaviour
         
         AddToPlayerWears(newItem.id);
     }
+
+    public IEnumerator LoadLeaderboard(Leaderboard leaderboard)
+    {
+        CoroutineWithData cd = new CoroutineWithData(this, _service.GetLeaderboard());
+        
+        yield return cd.coroutine;
+
+        if (cd.result == null)
+        {
+            leaderboard.Loaded(null);
+            yield break;
+        }
+        
+        leaderboard.Loaded((ApiService.LeaderboardPlayer[]) cd.result);
+    }
+
+    public bool IsLoggedIn()
+    {
+        return ! String.IsNullOrWhiteSpace(_state.token);
+    }
     
 }
 
@@ -239,8 +267,9 @@ class GameState
     
     public int highScore;
 
-    public int coins = 2000;
+    public int coins = 50;
 
-    public string perezGamesPlayerId = "";
-
+    public string lpgPlayerId = "";
+    
+    public string token = "";
 }
