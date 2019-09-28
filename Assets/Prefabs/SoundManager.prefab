@@ -86,6 +86,13 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: newWorld
+    clip: {fileID: 8300000, guid: 204f81d60d785744b8020e8c1594338c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
   - name: jump1
     clip: {fileID: 8300000, guid: 5ed949e68126c7146bcfe0551a98dbf7, type: 3}
     volume: 0.8
