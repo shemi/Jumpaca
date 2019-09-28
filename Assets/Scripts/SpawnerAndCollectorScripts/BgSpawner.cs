@@ -80,11 +80,18 @@ using UnityEngine;
 
             
             GameObject bg = Instantiate(backgroundPrefab, Vector3.zero, Quaternion.identity, transform);
+            bg.name = _currentBackgroundSpriteIndex.ToString();
             bg.transform.localPosition = temp;
             var spRenderer = bg.GetComponent<SpriteRenderer>();
             spRenderer.sprite = GetBackgroundSprite();
             var bgTransformPosition = bg.transform.position;
-            var spRendererSize = spRenderer.bounds.size; 
+            var spRendererSize = spRenderer.bounds.size;
+
+            Background background = backgroundSprites[_currentBackgroundSpriteIndex];
+            if(background.IsStart())
+            {
+                bg.GetComponent<BoxCollider2D>().enabled = true;
+            }
 
             fruitSpawner.Spawn(bgTransformPosition.y - (spRendererSize.y / 2), bgTransformPosition.y + (spRendererSize.y / 2));
             _highestYPosition = temp.y;

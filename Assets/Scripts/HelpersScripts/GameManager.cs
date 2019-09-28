@@ -7,24 +7,25 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    
+
     public Transform player;
     public Text scoreText;
     public Text comboCountText;
 
     private bool _isGameOver = true;
-    
+
     public int score => ScoreManager.instance.score;
-    
+
     public bool isGameOver => _isGameOver;
 
     private bool _newHighScorePlayed = false;
     [SerializeField] private ParticleSystem newHighScorePS;
+    [SerializeField] private ParticleSystem newWorldPS;
 
     private int _comboCount = 1;
     private string _comboType;
-    
-    
+
+
     void Awake()
     {
         if (instance == null)
@@ -35,7 +36,7 @@ public class GameManager : MonoBehaviour
         newHighScorePS.Stop(true);
 
         SoundManager.instance.PlayBackgroundMusic();
-        
+
         StartGame();
     }
 
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         return _comboCount;
     }
-    
+
     public void AddComboCount(string type)
     {
         if (type == _comboType)
@@ -67,21 +68,21 @@ public class GameManager : MonoBehaviour
         _comboType = type;
         _comboCount = 1;
     }
-    
+
     void Update()
     {
         var positionY = player.position.y;
-        var newScore = ((int) positionY) - score;
-        
-        if (newScore > 0 && score + newScore > score && ! _isGameOver)
+        var newScore = ((int)positionY) - score;
+
+        if (newScore > 0 && score + newScore > score && !_isGameOver)
         {
             ScoreManager.instance.UpdateScore(score + (newScore * _comboCount));
         }
-        
+
         comboCountText.text = _comboCount + "X";
         scoreText.text = score.ToString();
 
-        if (score > ScoreManager.instance.highScore && ! _newHighScorePlayed && ScoreManager.instance.highScore > 0)
+        if (score > ScoreManager.instance.highScore && !_newHighScorePlayed && ScoreManager.instance.highScore > 0)
         {
             newHighScore();
         }
@@ -93,22 +94,29 @@ public class GameManager : MonoBehaviour
         newHighScorePS.Play(true);
         SoundManager.instance.HighScoreSoundFX();
     }
-    
+
     private void StartGame()
     {
         _isGameOver = false;
+        newWorldPS.Stop();
     }
-    
+
     public void GameOver()
     {
         if (score > ScoreManager.instance.highScore)
         {
             ScoreManager.instance.SaveHighScore(score);
         }
-        
+
         ScoreManager.instance.SaveCoinsFromScore();
-        
+
         _isGameOver = true;
+    }
+
+    public void PlayNewWorld()
+    {
+        newWorldPS.Play();
+        SoundManager.instance.Play("newWorld");
     }
 
 }

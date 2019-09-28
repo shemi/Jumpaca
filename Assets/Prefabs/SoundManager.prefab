@@ -157,7 +157,7 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: beeDie
-    clip: {fileID: 8300000, guid: 0ae5922339062044ea96d947e23f7647, type: 3}
+    clip: {fileID: 8300000, guid: 4e2a11f8b1d55804fbe00186a58c887f, type: 3}
     volume: 0.9
     pitch: 1
     loop: 0

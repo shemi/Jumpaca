@@ -29,6 +29,8 @@ public class PlayerScript : MonoBehaviour
     private bool _superJumpActive = false;
     private bool _isinstanceNull;
 
+    private string _currentBackgroundId = "0";
+
     private void Start()
     {
         _isinstanceNull = GameManager.instance == null;
@@ -99,6 +101,11 @@ public class PlayerScript : MonoBehaviour
         if (disabled || GameManager.instance.isGameOver)
         {
             return;
+        }
+        
+        if(target.CompareTag("BG"))
+        {
+            GameManager.instance.PlayNewWorld();
         }
 
         if (target.CompareTag("Fruit"))

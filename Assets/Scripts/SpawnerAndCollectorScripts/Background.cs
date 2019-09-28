@@ -11,6 +11,11 @@ using UnityEngine;
     
     public int _appearances = 0;
     public int _loops = 0;
+
+    public bool IsStart()
+    {
+        return _appearances == 1;
+    }
     
     public Sprite GetSprite()
     {
