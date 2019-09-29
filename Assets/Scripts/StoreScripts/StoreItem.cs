@@ -16,9 +16,13 @@ public class StoreItem : MonoBehaviour
     public Animator checkIconAnimator;
     public Animator errorIconAnimator;
 
-    private bool _errorIsShown = false;
-    private bool _inInventory = false;
-    
+    [HideInInspector]
+    public bool _errorIsShown = false;
+
+    [HideInInspector]
+    public bool _inInventory = false;
+
+
     private void Update()
     {
         if (!_inInventory && GameStateManager.instance.HasItemInInventory(_item.id))
@@ -37,7 +41,7 @@ public class StoreItem : MonoBehaviour
         }
     }
 
-    void ToggleShadowStatus(bool active)
+    public void ToggleShadowStatus(bool active)
     {
         Color newColor = shadow.effectColor;
         newColor.a = active ? .23f : 0;
@@ -50,6 +54,7 @@ public class StoreItem : MonoBehaviour
         priceText.text = _item.price.ToString();
         nameText.text = _item.storeName;
         image.sprite = _item.iconSprite;
+
     }
     
     public void OnClick()
@@ -64,7 +69,7 @@ public class StoreItem : MonoBehaviour
         }
     }
 
-    private void ShowError()
+    public void ShowError()
     {
         if (_errorIsShown)
         {
@@ -77,7 +82,7 @@ public class StoreItem : MonoBehaviour
         StartCoroutine(HideError());
     }
 
-    private IEnumerator HideError()
+    public IEnumerator HideError()
     {
         yield return new WaitForSeconds(2f);
         errorIconAnimator.SetBool("Show", false);

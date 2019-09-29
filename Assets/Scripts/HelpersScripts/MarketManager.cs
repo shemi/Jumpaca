@@ -55,6 +55,14 @@ public class MarketManager : MonoBehaviour
         return item != null && item.price <= state.Coins;
     }
 
+    public bool CanBuySkin(string itemId)
+    {
+        var state = GameStateManager.instance;
+        var item = state.GetSkin(itemId);
+
+        return item != null && item.price <= state.Coins;
+    }
+
     public void ShowNoCoinsMessage()
     {
         messages.PushMessage(UIMessageManager.Type.Error, noCoinsMessage);
@@ -84,11 +92,25 @@ public class MarketManager : MonoBehaviour
         {
             return;
         }
-        
-        
+
         state.Charge(item.price);
         state.AddItemToPlayerInventory(item.id);
         state.ToggleWear(item.id);
+    }
+
+    public void BuySkin(string id)
+    {
+        var state = GameStateManager.instance;
+        var item = state.GetSkin(id);
+
+        if (item == null)
+        {
+            return;
+        }
+
+        state.Charge(item.price);
+        state.AddItemToPlayerInventory(item.id);
+        state.SetPlayerSkin(item.id);
     }
     
     public void ToggleWear(string itemId)
@@ -104,4 +126,17 @@ public class MarketManager : MonoBehaviour
         state.ToggleWear(item.id);
     }
     
+    public void SetSkin(string skinId)
+    {
+        var state = GameStateManager.instance;
+        var item = state.GetSkin(skinId);
+
+        if (item == null)
+        {
+            return;
+        }
+
+        state.SetPlayerSkin(item.id);
+    }
+
 }

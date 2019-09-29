@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerItem
+public class PlayerItem : Item
 {
     public enum Categories { Head, Hair, Eyes, Face, Neck, Legs };
     
@@ -20,4 +20,28 @@ public class PlayerItem
 
     public Vector3 position;
 
+    public override int GetPrice()
+    {
+        return price;
+    }
+
+    public override Sprite GetStoreSprite()
+    {
+        return iconSprite;
+    }
+
+    public override Sprite GetSprite()
+    {
+        return itemSprite;
+    }
+
+    public override string GetStoreName()
+    {
+        return storeName;
+    }
+
+    public override string GetID()
+    {
+        return id;
+    }
 }

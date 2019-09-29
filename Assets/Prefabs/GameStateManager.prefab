@@ -50,6 +50,9 @@ MonoBehaviour:
   playerWearsChanged:
     m_PersistentCalls:
       m_Calls: []
+  playerSkinChanged:
+    m_PersistentCalls:
+      m_Calls: []
   items:
   - id: BlackSunglasess
     storeName: Sunglasses
@@ -186,5 +189,30 @@ MonoBehaviour:
       type: 3}
     price: 760
     position: {x: -1.88, y: 3.59, z: 0}
+  skins:
+  - id: skin_white
+    storeName: Default
+    sprite: {fileID: -7203365194970735605, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 0
+  - id: skin_brown
+    storeName: Shaqisha
+    sprite: {fileID: 6688234476281053579, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 2560
+  - id: skin_yellow
+    storeName: Chon
+    sprite: {fileID: 7163429825483425899, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 2560
+  - id: skin_pink
+    storeName: Pacinki
+    sprite: {fileID: 19654504721399661, guid: 97aca0b017a84b1498f57ab244c40eae, type: 3}
+    price: 2560
+  - id: skin_gray
+    storeName: Granpaca
+    sprite: {fileID: 6915831039358913667, guid: 97aca0b017a84b1498f57ab244c40eae,
+      type: 3}
+    price: 2560
   apiUrl: https://jumpaca.lowbudgetgames.com/
   gameToken: 5jWsyyrVDxsl08lAFK29STXp3vCwYJgR9qn35U

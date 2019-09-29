@@ -29,14 +29,20 @@ public class PlayerStyle : MonoBehaviour
             return myPropInfo.GetValue(this, null);
         }
     }
-    
+
+    public SpriteRenderer _sp;
+
     void Start()
     {
+        _sp = GetComponent<SpriteRenderer>();
+
         GameStateManager.instance.playerWearsChanged.AddListener(UpdatePlayerItems);
+        GameStateManager.instance.playerSkinChanged.AddListener(ChangeSkin);
 
         if (GameStateManager.instance.loaded)
         {
             UpdatePlayerItems();
+            ChangeSkin();
         }
     }
 
@@ -61,11 +67,11 @@ public class PlayerStyle : MonoBehaviour
             itemHolder.SetActive(true);
         }
         
-        foreach (PlayerItem item in items)
-        {
-            
-        }
-        
+    }
+
+    private void ChangeSkin()
+    {
+        _sp.sprite = GameStateManager.instance.GetPlayerSkin();
     }
 
     // Update is called once per frame

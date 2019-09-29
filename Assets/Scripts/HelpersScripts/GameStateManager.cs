@@ -12,31 +12,37 @@ using UnityEngine.Serialization;
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager instance;
-    
+
     private const string fileName = "data.prz";
-    
+
     private string filePath => Application.persistentDataPath + Path.AltDirectorySeparatorChar + fileName;
 
     private GameState _state = new GameState();
 
     public bool loaded = false;
-    
+
     public UnityEvent playerInventoryChanged;
-    
+
     public UnityEvent playerWearsChanged;
 
+    public UnityEvent playerSkinChanged;
+
     public List<PlayerItem> items = new List<PlayerItem>();
+
+    public List<Skin> skins = new List<Skin>();
 
     public List<string> PlayerInventory => _state.playerInventory;
 
     public List<string> PlayerWears => _state.playerWears;
 
     public int HighScore => _state.highScore;
-    
+
     public int Coins => _state.coins;
-    
+
+    public string PlayerSkinId => String.IsNullOrEmpty(_state.playerSkinId) ? GameState.DefaultPlayerSkin : _state.playerSkinId;
+
     public string PlayerId => _state.lpgPlayerId;
-    
+
     //API
     public string apiUrl = "";
     public string gameToken = "";
@@ -78,23 +84,23 @@ public class GameStateManager : MonoBehaviour
         {
             playerInventoryChanged = new UnityEvent();
         }
-        
+
         if (playerWearsChanged == null)
         {
             playerWearsChanged = new UnityEvent();
         }
-        
+
         if (File.Exists(filePath))
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             FileStream file = File.Open(filePath, FileMode.Open);
 
-            GameState state = (GameState) binaryFormatter.Deserialize(file);
+            GameState state = (GameState)binaryFormatter.Deserialize(file);
             file.Close();
 
             _state = state;
         }
-        
+
         loaded = true;
     }
 
@@ -102,18 +108,18 @@ public class GameStateManager : MonoBehaviour
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
         FileStream file = File.Create(filePath);
-        
+
         binaryFormatter.Serialize(file, _state);
         file.Close();
     }
-    
+
     public void SetPlayerInventory(List<string> newInventory)
     {
         _state.playerInventory = newInventory;
         Save();
         playerInventoryChanged.Invoke();
     }
-    
+
     public void AddItemToPlayerInventory(string itemId)
     {
         _state.playerInventory.Add(itemId);
@@ -126,21 +132,21 @@ public class GameStateManager : MonoBehaviour
         if (_state.playerWears.Exists(id => id == itemId))
         {
             _state.playerWears.Remove(itemId);
-            Save();   
+            Save();
             playerWearsChanged.Invoke();
         }
     }
-    
+
     public void AddToPlayerWears(string itemId)
     {
-        if (! _state.playerWears.Exists(id => id == itemId))
+        if (!_state.playerWears.Exists(id => id == itemId))
         {
             _state.playerWears.Add(itemId);
             Save();
             playerWearsChanged.Invoke();
         }
     }
-    
+
     public void SetPlayerWears(List<string> playerWears)
     {
         _state.playerWears = playerWears;
@@ -153,7 +159,7 @@ public class GameStateManager : MonoBehaviour
         _state.highScore = score;
         Save();
     }
-    
+
     public void SetCoins(int coins)
     {
         _state.coins = coins;
@@ -179,15 +185,20 @@ public class GameStateManager : MonoBehaviour
                 list.Add(item);
             }
         }
-        
+
         return list;
     }
-    
+
     public bool HasItemInInventory(string itemId)
     {
+        if(itemId == GameState.DefaultPlayerSkin)
+        {
+            return true;
+        }
+
         return PlayerInventory.Exists(id => id == itemId);
     }
-    
+
     public bool IsWearing(string itemId)
     {
         return PlayerWears.Exists(id => id == itemId);
@@ -206,7 +217,7 @@ public class GameStateManager : MonoBehaviour
         {
             throw new Exception("Trying to charge more then have");
         }
-        
+
         SetCoins(newCoins);
     }
 
@@ -217,7 +228,7 @@ public class GameStateManager : MonoBehaviour
             RemoveFromPlayerWears(itemId);
             return;
         }
-        
+
         var items = GetPlayerWearItems();
         var newItem = GetItem(itemId);
 
@@ -232,8 +243,31 @@ public class GameStateManager : MonoBehaviour
         {
             RemoveFromPlayerWears(exist.id);
         }
-        
+
         AddToPlayerWears(newItem.id);
+    }
+
+    public Skin GetPlayerSkinItem()
+    {
+        return GetSkin(PlayerSkinId);
+    }
+
+    public Sprite GetPlayerSkin()
+    {
+        return GetPlayerSkinItem().sprite;
+    }
+
+    [CanBeNull]
+    public Skin GetSkin(string id)
+    {
+        return skins.Find(item => item.id == id);
+    }
+
+    public void SetPlayerSkin(string id)
+    {
+        _state.playerSkinId = id;
+        playerSkinChanged.Invoke();
+        Save();
     }
 
     public IEnumerator LoadLeaderboard(Leaderboard leaderboard)
@@ -261,10 +295,14 @@ public class GameStateManager : MonoBehaviour
 [Serializable]
 class GameState
 {
+    public static string DefaultPlayerSkin = "skin_white";
+
     public List<string> playerInventory = new List<string>();
     
     public List<string> playerWears = new List<string>();
-    
+
+    public string playerSkinId = GameState.DefaultPlayerSkin;
+
     public int highScore;
 
     public int coins = 50;
