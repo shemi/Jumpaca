@@ -84,59 +84,64 @@
             </e>
           </e>
         </e>
-        <e p="EnemiesSpawner.cs" t="Include" />
-        <e p="Enemy.cs" t="Include" />
-        <e p="FirstTimeController.cs" t="Include" />
-        <e p="Fruit.cs" t="Include" />
-        <e p="FruitSpawner.cs" t="Include" />
-        <e p="GameOverManager.cs" t="Include" />
-        <e p="Leaderboard.cs" t="Include" />
-        <e p="LeaderboardItem.cs" t="Include" />
-        <e p="PlayerStyle.cs" t="Include" />
-        <e p="ScenesManager.cs" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="ApiService.cs" t="Include" />
-          <e p="BananaScripts" t="Include">
-            <e p="Banana.cs" t="Include" />
+          <e p="Backgrounds" t="Include">
+            <e p="Background.cs" t="Include" />
+            <e p="BackgroundSpawner.cs" t="Include" />
           </e>
-          <e p="CameraScripts" t="Include">
+          <e p="Camera" t="Include">
             <e p="CameraFollow.cs" t="Include" />
           </e>
-          <e p="HelpersScripts" t="Include">
+          <e p="Enemies" t="Include">
+            <e p="EnemiesSpawner.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+          </e>
+          <e p="FruitS" t="Include">
+            <e p="Fruit.cs" t="Include" />
+            <e p="FruitSpawner.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="ApiService.cs" t="Include" />
             <e p="BackgroundHelper.cs" t="Include" />
             <e p="BoundariesManager.cs" t="Include" />
+            <e p="Collector.cs" t="Include" />
             <e p="CoroutineWithData.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="GameOverManager.cs" t="Include" />
             <e p="GameStateManager.cs" t="Include" />
             <e p="Item.cs" t="Include" />
             <e p="JsonHelper.cs" t="Include" />
             <e p="MarketManager.cs" t="Include" />
             <e p="MenuManager.cs" t="Include" />
+            <e p="ScenesManager.cs" t="Include" />
             <e p="ScoreManager.cs" t="Include" />
             <e p="SliderMovementScript.cs" t="Include" />
+            <e p="SlidingNumber.cs" t="Include" />
             <e p="SoundManager.cs" t="Include" />
-            <e p="Swipe.cs" t="Include" />
+            <e p="UIHeaderController.cs" t="Include" />
           </e>
-          <e p="PlayerScripts" t="Include">
-            <e p="PlayerScript.cs" t="Include" />
+          <e p="Menu" t="Include">
+            <e p="FirstTimeController.cs" t="Include" />
+            <e p="Leaderboard.cs" t="Include" />
+            <e p="LeaderboardItem.cs" t="Include" />
+            <e p="SettingsController.cs" t="Include" />
           </e>
-          <e p="Skin.cs" t="Include" />
-          <e p="Sound.cs" t="Include" />
-          <e p="SpawnerAndCollectorScripts" t="Include">
-            <e p="Background.cs" t="Include" />
-            <e p="BgSpawner.cs" t="Include" />
-            <e p="Collector.cs" t="Include" />
+          <e p="Player" t="Include">
             <e p="PlayerItem.cs" t="Include" />
+            <e p="PlayerScript.cs" t="Include" />
+            <e p="PlayerStyle.cs" t="Include" />
+            <e p="Skin.cs" t="Include" />
+          </e>
+          <e p="Sounds" t="Include">
+            <e p="Sound.cs" t="Include" />
           </e>
           <e p="StoreScripts" t="Include">
             <e p="StoreGridBuilder.cs" t="Include" />
             <e p="StoreItem.cs" t="Include" />
             <e p="StoreSkin.cs" t="Include" />
           </e>
-          <e p="UIHeaderController.cs" t="Include" />
+          <e p="UIMessageManager.cs" t="Include" />
         </e>
-        <e p="SettingsController.cs" t="Include" />
-        <e p="SlidingNumber.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
@@ -165,7 +170,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="UIMessageManager.cs" t="Include" />
       </e>
       <e p="Jumpaca.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
