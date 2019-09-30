@@ -8,12 +8,13 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class GameStateManager : MonoBehaviour
 {
     public static GameStateManager instance;
 
-    private const string fileName = "data.prz";
+    private const string fileName = "data.lbg";
 
     private string filePath => Application.persistentDataPath + Path.AltDirectorySeparatorChar + fileName;
 
@@ -21,6 +22,8 @@ public class GameStateManager : MonoBehaviour
 
     public bool loaded = false;
 
+    public UnityEvent ready;
+    
     public UnityEvent playerInventoryChanged;
 
     public UnityEvent playerWearsChanged;
@@ -41,7 +44,13 @@ public class GameStateManager : MonoBehaviour
 
     public string PlayerSkinId => String.IsNullOrEmpty(_state.playerSkinId) ? GameState.DefaultPlayerSkin : _state.playerSkinId;
 
-    public string PlayerId => _state.lpgPlayerId;
+    public string PlayerToken => _state.token;
+    
+    public string PlayerId => _state.lbgPlayerId;
+    
+    public string PlayerNickname => String.IsNullOrEmpty(_state.nickname) ? "Player-" + Random.Range(0, 100) : _state.nickname;
+
+    public List<Sound.SoundType> MutedSounds => _state.mutedSounds ?? new List<Sound.SoundType>();
 
     //API
     public string apiUrl = "";
@@ -89,6 +98,11 @@ public class GameStateManager : MonoBehaviour
         {
             playerWearsChanged = new UnityEvent();
         }
+        
+        if (ready == null)
+        {
+            ready = new UnityEvent();
+        }
 
         if (File.Exists(filePath))
         {
@@ -99,18 +113,91 @@ public class GameStateManager : MonoBehaviour
             file.Close();
 
             _state = state;
+            
+            ready.Invoke();
         }
 
+        if (IsLoggedIn())
+        {
+            StartCoroutine(LoadFromServer());
+        }
+        
         loaded = true;
     }
 
-    void Save()
+    IEnumerator LoadFromServer()
+    {
+        CoroutineWithData cd = new CoroutineWithData(this, _service.Me());
+        
+        yield return cd.coroutine;
+
+        if (cd.result == null)
+        {
+            yield break;
+        }
+
+        ApiService.PlayerRespond respond = (ApiService.PlayerRespond) cd.result;
+        
+        _state.lbgPlayerId = respond.playerId.ToString();
+        _state.nickname = respond.nickname;
+
+        foreach (string item in respond.inventory)
+        {
+            if (!_state.playerInventory.Exists(i => i == item))
+            {
+                _state.playerInventory.Add(item);
+            }
+        }
+        
+        foreach (string item in respond.wears)
+        {
+            if (!_state.playerWears.Exists(i => i == item))
+            {
+                _state.playerWears.Add(item);
+            }
+        }
+
+        if (!String.IsNullOrEmpty(respond.skinId))
+        {
+            _state.playerSkinId = respond.skinId;
+        }
+        
+        if (_state.highScore < respond.highScore)
+        {
+            _state.highScore = respond.highScore;
+        }
+
+        if (_state.coins < respond.coins)
+        {
+            _state.coins = respond.coins;
+        }
+        
+        ready.Invoke();
+        Save(false);
+    }
+    
+    void Save(bool persistServer = true)
     {
         BinaryFormatter binaryFormatter = new BinaryFormatter();
         FileStream file = File.Create(filePath);
 
         binaryFormatter.Serialize(file, _state);
         file.Close();
+
+        if (persistServer && IsLoggedIn())
+        {
+            ApiService.PlayerUpdateRequest request = new ApiService.PlayerUpdateRequest
+            {
+                coins = _state.coins,
+                highScore = _state.highScore,
+                nickname = _state.nickname,
+                skinId = _state.playerSkinId,
+                inventory = _state.playerInventory.ToArray(),
+                wears = _state.playerWears.ToArray()
+            };
+            
+            StartCoroutine(_service.Update(request));
+        }
     }
 
     public void SetPlayerInventory(List<string> newInventory)
@@ -285,6 +372,50 @@ public class GameStateManager : MonoBehaviour
         leaderboard.Loaded((ApiService.LeaderboardPlayer[]) cd.result);
     }
 
+    public IEnumerator Register(string nickname)
+    {
+        _state.nickname = nickname;
+        CoroutineWithData cd = new CoroutineWithData(this, _service.Register(nickname));
+        
+        yield return cd.coroutine;
+
+        if (cd.result == null)
+        {
+            yield break;
+        }
+
+        ApiService.RegisterRespond respond = (ApiService.RegisterRespond) cd.result;
+        
+        _state.lbgPlayerId = respond.playerId.ToString();
+        _state.token = respond.token;
+        Save(false);
+    }
+
+    public void ToggleMuteSound(Sound.SoundType type)
+    {
+        if (_state.mutedSounds.Exists(t => t == type))
+        {
+            _state.mutedSounds.Remove(type);
+        }
+        else
+        {
+            _state.mutedSounds.Add(type);
+        }
+        
+        Save(false);
+    }
+    
+    public bool IsMuted(Sound.SoundType type)
+    {
+        return MutedSounds.Exists(t => t == type);
+    }
+
+    public void UpdateNickname(string nickname)
+    {
+        _state.nickname = nickname;
+        Save();
+    }
+    
     public bool IsLoggedIn()
     {
         return ! String.IsNullOrWhiteSpace(_state.token);
@@ -301,13 +432,17 @@ class GameState
     
     public List<string> playerWears = new List<string>();
 
-    public string playerSkinId = GameState.DefaultPlayerSkin;
+    public string playerSkinId = DefaultPlayerSkin;
 
     public int highScore;
 
     public int coins = 50;
 
-    public string lpgPlayerId = "";
+    public string nickname = "";
+    
+    public string lbgPlayerId = "";
     
     public string token = "";
+
+    public List<Sound.SoundType> mutedSounds = new List<Sound.SoundType>();
 }

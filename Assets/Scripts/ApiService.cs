@@ -22,6 +22,46 @@ public class ApiService
         public int playerId;
     }
     
+    [Serializable]
+    public struct RegisterRequest
+    {
+        public string gameToken;
+        public string nickname;
+        public string deviceType;
+        public string deviceId;
+    }
+    
+    [Serializable]
+    public struct RegisterRespond
+    {
+        public string token;
+        public bool exists;
+        public int playerId;
+    }
+    
+    [Serializable]
+    public struct PlayerUpdateRequest
+    {
+        public string nickname;
+        public int highScore;
+        public int coins;
+        public string skinId;
+        public string[] inventory;
+        public string[] wears;
+    }
+    
+    [Serializable]
+    public struct PlayerRespond
+    {
+        public int playerId;
+        public string[] inventory;
+        public string[] wears;
+        public string skinId;
+        public string nickname;
+        public int highScore;
+        public int coins;
+    }
+    
     public ApiService(string url, [CanBeNull] string gameToken)
     {
         _url = url;
@@ -31,6 +71,11 @@ public class ApiService
     public string GetDeviceId()
     {
         return SystemInfo.deviceUniqueIdentifier;
+    }
+    
+    public string GetDeviceType()
+    {
+        return SystemInfo.deviceModel;
     }
     
     public ApiService SetToken(string token)
@@ -86,6 +131,13 @@ public class ApiService
         return Request(path, "", headers, "GET");
     }
 
+    UnityWebRequest Post(string path, object obj, [CanBeNull] Dictionary<string, string> headers = null)
+    {
+        string json = JsonUtility.ToJson(obj);
+        
+        return Request(path, json, headers);
+    }
+    
     public IEnumerator GetLeaderboard()
     {
         UnityWebRequest request = Get("/api/v1/leaderboard", new NameValueCollection());
@@ -98,6 +150,66 @@ public class ApiService
         }
 
         yield return JsonHelper.FromJson<LeaderboardPlayer>(request.downloadHandler.text);
+    }
+
+    public IEnumerator Register(string nickname)
+    {
+        var json = new RegisterRequest()
+        {
+            deviceId = GetDeviceId(),
+            deviceType = GetDeviceType(),
+            nickname = nickname,
+            gameToken = _gameToken
+        };
+
+        UnityWebRequest request = Post("/api/v1/register", json);
+        
+        yield return request.SendWebRequest();
+
+        if (request.isNetworkError)
+        {
+            yield return null;
+        }
+
+        yield return JsonUtility.FromJson<RegisterRespond>(request.downloadHandler.text);
+    }
+    
+    public IEnumerator Me()
+    {
+        if (String.IsNullOrEmpty(GameStateManager.instance.PlayerToken))
+        {
+            yield break;
+        }
+        
+        var headers = new Dictionary<string, string>();
+        headers.Add("X-API-TOKEN", GameStateManager.instance.PlayerToken);
+        
+        UnityWebRequest request = Get("/api/v1/me", new NameValueCollection(), headers);
+        
+        yield return request.SendWebRequest();
+
+        if (request.isNetworkError)
+        {
+            yield return null;
+        }
+
+        yield return JsonUtility.FromJson<PlayerRespond>(request.downloadHandler.text);
+    }
+
+    public IEnumerator Update(PlayerUpdateRequest json)
+    {
+        var headers = new Dictionary<string, string> {{"X-API-TOKEN", GameStateManager.instance.PlayerToken}};
+
+        UnityWebRequest request = Post("/api/v1/update", json, headers);
+        
+        yield return request.SendWebRequest();
+        
+        if (request.isNetworkError)
+        {
+            yield return null;
+        }
+
+        yield return true;
     }
     
 }

@@ -5,6 +5,13 @@ using UnityEngine.Audio;
 [Serializable]
 public class Sound
 {
+    public enum SoundType
+    {
+        MUSIC,
+        SFX,
+        UI
+    }
+    
     public string name;
     
     public AudioClip clip;
@@ -18,6 +25,8 @@ public class Sound
     public bool loop = false;
 
     public bool playOnAwake = false;
+
+    public SoundType type;
     
     [HideInInspector]
     public AudioSource source;
@@ -32,14 +41,24 @@ public class Sound
         source.pitch = pitch;
         source.loop = loop;
 
+        GameStateManager.instance.ready.AddListener(AfterReady);
+    }
+
+    void AfterReady()
+    {
         if (playOnAwake)
         {
             Play();
         }
     }
-
+    
     public void Play()
     {
+        if (GameStateManager.instance && GameStateManager.instance.IsMuted(type))
+        {
+            return;
+        }
+        
         source.Play();
     }
 
@@ -47,7 +66,7 @@ public class Sound
     {
         source.Stop();
     }
-    
+
     public IEnumerator FadeOut(float speed)
     {
         if (! source.isPlaying)

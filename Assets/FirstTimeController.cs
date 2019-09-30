@@ -13,7 +13,7 @@ public class FirstTimeController : MonoBehaviour
     
     public void Show()
     {
-        inputField.text = "Player" + Random.Range(0, 100);
+        inputField.text = GameStateManager.instance.PlayerNickname;
         animator.SetBool("ShowNickname", true);
     }
 
@@ -27,6 +27,7 @@ public class FirstTimeController : MonoBehaviour
     {
         Close();
         SoundManager.instance.Play("click");
+        StartCoroutine(GameStateManager.instance.Register(inputField.text));
         StartCoroutine(GoToGameplay());
     }
 

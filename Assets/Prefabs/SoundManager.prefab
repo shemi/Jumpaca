@@ -50,6 +50,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playOnAwake: 1
+    type: 0
     source: {fileID: 0}
   - name: gameOver
     clip: {fileID: 8300000, guid: 96c0f3bf8c5c93648a8bf42fae88c3c4, type: 3}
@@ -57,6 +58,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: highScore
     clip: {fileID: 8300000, guid: 8103381cc282832418fd09b67afc5e4b, type: 3}
@@ -64,6 +66,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: click
     clip: {fileID: 8300000, guid: f87540e04be905d4e92f9483f384c1f9, type: 3}
@@ -71,6 +74,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 2
     source: {fileID: 0}
   - name: boo
     clip: {fileID: 8300000, guid: d07f1f6b1cf9abe46815e75d8880ca5c, type: 3}
@@ -78,6 +82,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: win
     clip: {fileID: 8300000, guid: bb7a74817d225a7479ef26890a6d674c, type: 3}
@@ -85,6 +90,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: newWorld
     clip: {fileID: 8300000, guid: 204f81d60d785744b8020e8c1594338c, type: 3}
@@ -92,6 +98,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: jump1
     clip: {fileID: 8300000, guid: 5ed949e68126c7146bcfe0551a98dbf7, type: 3}
@@ -99,6 +106,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: jump2
     clip: {fileID: 8300000, guid: 5ed949e68126c7146bcfe0551a98dbf7, type: 3}
@@ -106,6 +114,7 @@ MonoBehaviour:
     pitch: 1.5
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: jump3
     clip: {fileID: 8300000, guid: 5ed949e68126c7146bcfe0551a98dbf7, type: 3}
@@ -113,6 +122,7 @@ MonoBehaviour:
     pitch: 2
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: jump4
     clip: {fileID: 8300000, guid: 5ed949e68126c7146bcfe0551a98dbf7, type: 3}
@@ -120,6 +130,7 @@ MonoBehaviour:
     pitch: 2.5
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: error
     clip: {fileID: 8300000, guid: 9e3d4e0511ca6e84287a6a8dd9cf3404, type: 3}
@@ -127,6 +138,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 2
     source: {fileID: 0}
   - name: coin
     clip: {fileID: 8300000, guid: 4c0dc33d416511647bd80c5b3d6cf788, type: 3}
@@ -134,6 +146,7 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: buy
     clip: {fileID: 8300000, guid: ae484c173959226458d61ce14ff0f5fb, type: 3}
@@ -141,6 +154,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 2
     source: {fileID: 0}
   - name: superJump
     clip: {fileID: 8300000, guid: 2bee8c73d4430604eb0f9d20f27844a7, type: 3}
@@ -148,6 +162,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: birdDie
     clip: {fileID: 8300000, guid: 1d460150c1d60e740970a726e2d4519c, type: 3}
@@ -155,6 +170,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: birdHit
     clip: {fileID: 8300000, guid: 26bad783ee17b24448ffa5a024816afe, type: 3}
@@ -162,6 +178,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: beeDie
     clip: {fileID: 8300000, guid: 4e2a11f8b1d55804fbe00186a58c887f, type: 3}
@@ -169,6 +186,7 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
   - name: beeHit
     clip: {fileID: 8300000, guid: da808eaaa67053042969f18a2552c00b, type: 3}
@@ -176,4 +194,5 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     playOnAwake: 0
+    type: 1
     source: {fileID: 0}
