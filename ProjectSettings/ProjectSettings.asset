@@ -171,7 +171,7 @@ PlayerSettings:
     Android: com.lowbudgetgames.jumpaca
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 4
+  AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 23
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
