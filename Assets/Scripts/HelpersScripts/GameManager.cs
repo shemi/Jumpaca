@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private int _comboCount = 1;
     private string _comboType;
 
+    private string _lastNewWorldId = "";
 
     void Awake()
     {
@@ -113,8 +114,14 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
     }
 
-    public void PlayNewWorld()
+    public void PlayNewWorld(string bgName)
     {
+        if (_lastNewWorldId == bgName)
+        {
+            return;
+        }
+
+        _lastNewWorldId = bgName;
         newWorldPS.Play();
         SoundManager.instance.Play("newWorld");
     }

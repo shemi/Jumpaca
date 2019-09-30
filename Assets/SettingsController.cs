@@ -9,6 +9,8 @@ public class SettingsController : MonoBehaviour
     public Toggle bgMusicToggle, sfxToggle, uiToggle;
 
     public TMP_InputField nicknameInput;
+
+    public Animator animator;
     
     void Start()
     {
@@ -56,7 +58,7 @@ public class SettingsController : MonoBehaviour
         SoundManager.instance.Play("click");
     }
 
-    public void updateNickname()
+    public void UpdateNickname()
     {
         string nickname = nicknameInput.text;
 
@@ -66,6 +68,18 @@ public class SettingsController : MonoBehaviour
         }
         
         GameStateManager.instance.UpdateNickname(nickname.Trim());
+    }
+
+    public void Show()
+    {
+        SoundManager.instance.Play("click");
+        animator.SetBool("ShowSettings", true);
+    }
+
+    public void Hide()
+    {
+        SoundManager.instance.Play("click");
+        animator.SetBool("ShowSettings", false);
     }
     
 }

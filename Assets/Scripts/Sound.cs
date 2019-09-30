@@ -54,7 +54,7 @@ public class Sound
     
     public void Play()
     {
-        if (GameStateManager.instance && GameStateManager.instance.IsMuted(type))
+        if (GameStateManager.instance.IsMuted(type) || isPlaying)
         {
             return;
         }

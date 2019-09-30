@@ -105,7 +105,7 @@ public class PlayerScript : MonoBehaviour
         
         if(target.CompareTag("BG"))
         {
-            GameManager.instance.PlayNewWorld();
+            GameManager.instance.PlayNewWorld(target.name);
         }
 
         if (target.CompareTag("Fruit"))

@@ -63,7 +63,7 @@ public class MenuManager : MonoBehaviour
         SoundManager.instance.ClickFX();
         leaderboard.Hide();
     }
-    
+
     public void GoToStore()
     {
         SoundManager.instance.ClickFX();
