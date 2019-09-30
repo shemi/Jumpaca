@@ -87,6 +87,7 @@
         <e p="Scripts" t="Include">
           <e p="Backgrounds" t="Include">
             <e p="Background.cs" t="Include" />
+            <e p="BackgroundHelper.cs" t="Include" />
             <e p="BackgroundSpawner.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
@@ -102,28 +103,25 @@
           </e>
           <e p="Helpers" t="Include">
             <e p="ApiService.cs" t="Include" />
-            <e p="BackgroundHelper.cs" t="Include" />
             <e p="BoundariesManager.cs" t="Include" />
             <e p="Collector.cs" t="Include" />
             <e p="CoroutineWithData.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="GameOverManager.cs" t="Include" />
             <e p="GameStateManager.cs" t="Include" />
-            <e p="Item.cs" t="Include" />
             <e p="JsonHelper.cs" t="Include" />
-            <e p="MarketManager.cs" t="Include" />
-            <e p="MenuManager.cs" t="Include" />
             <e p="ScenesManager.cs" t="Include" />
             <e p="ScoreManager.cs" t="Include" />
             <e p="SliderMovementScript.cs" t="Include" />
             <e p="SlidingNumber.cs" t="Include" />
-            <e p="SoundManager.cs" t="Include" />
             <e p="UIHeaderController.cs" t="Include" />
+            <e p="UIMessageManager.cs" t="Include" />
           </e>
           <e p="Menu" t="Include">
             <e p="FirstTimeController.cs" t="Include" />
             <e p="Leaderboard.cs" t="Include" />
             <e p="LeaderboardItem.cs" t="Include" />
+            <e p="MenuManager.cs" t="Include" />
             <e p="SettingsController.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -134,13 +132,15 @@
           </e>
           <e p="Sounds" t="Include">
             <e p="Sound.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
           </e>
-          <e p="StoreScripts" t="Include">
+          <e p="Store" t="Include">
+            <e p="Item.cs" t="Include" />
+            <e p="MarketManager.cs" t="Include" />
             <e p="StoreGridBuilder.cs" t="Include" />
             <e p="StoreItem.cs" t="Include" />
             <e p="StoreSkin.cs" t="Include" />
           </e>
-          <e p="UIMessageManager.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
