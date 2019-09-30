@@ -19,13 +19,14 @@ public class FirstTimeController : MonoBehaviour
 
     public void Close()
     {
+        SoundManager.instance.Play("click");
         animator.SetBool("ShowNickname", false);
     }
     
     public void Next()
     {
         Close();
-        
+        SoundManager.instance.Play("click");
         StartCoroutine(GoToGameplay());
     }
 
