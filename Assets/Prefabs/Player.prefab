@@ -5175,6 +5175,7 @@ MonoBehaviour:
   faceHolder: {fileID: 4036989349960916344}
   neckHolder: {fileID: 7731524925230006927}
   legsHolder: {fileID: 8451373962121336317}
+  _sp: {fileID: 0}
 --- !u!60 &1454786095725545801
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -54,7 +54,7 @@ public class GameOverManager : MonoBehaviour
 
     public void ResetGame()
     {
-        SoundManager.instance.FadeOut("coin", 0.010f);
+        SoundManager.instance.FadeOut("coin", 0.03f);
         GameManager.instance.RestartGame();
     }
     

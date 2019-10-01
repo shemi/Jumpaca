@@ -440,11 +440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d705da5479e17a4fad88dc528d2804a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tap: 0
-  _isDragging: 0
-  _startTouch: {x: 0, y: 0}
-  _swipeDelta: {x: 0, y: 0}
-  _touchPosition: {x: 0, y: 0}
 --- !u!1 &91834660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberText: {fileID: 927024394}
-  animationTime: 10
+  animationTime: 20
   numberFormat: 0
   prefix: +
   playCoinSound: 1
@@ -11559,7 +11554,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 0}
+  m_SizeDelta: {x: 646, y: 646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353821415
 MonoBehaviour:
@@ -41802,11 +41797,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3478744186232733701, guid: e1ad5792fa1acb44a9b42827259cd275,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.17
-      objectReference: {fileID: 0}
     - target: {fileID: 4288499435651429056, guid: e1ad5792fa1acb44a9b42827259cd275,
         type: 3}
       propertyPath: slider
@@ -41814,8 +41804,8 @@ PrefabInstance:
       objectReference: {fileID: 4074488}
     - target: {fileID: 4288499435651429056, guid: e1ad5792fa1acb44a9b42827259cd275,
         type: 3}
-      propertyPath: superJumpComboCount
-      value: 3
+      propertyPath: moveSpeed
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1ad5792fa1acb44a9b42827259cd275, type: 3}

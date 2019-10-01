@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -21,22 +22,26 @@ public class SlidingNumber : MonoBehaviour
 
     private bool _start;
     private bool _playingSFX = false;
-    
+
     public void SetNumber(float value)
     {
         _initialNumber = _currentNumber;
         _desiredNumber = value;
         _start = true;
-        
+
         if (_desiredNumber == _initialNumber)
         {
             numberText.text = prefix + _currentNumber.ToString(numberFormat);
-            return;
         }
-        
-        if (_initialNumber != _desiredNumber)
+
+        else
         {
             _countSpeed = animationTime;
+
+            if (_desiredNumber - _initialNumber > 500)
+            {
+                _countSpeed = animationTime * (_desiredNumber - _initialNumber) / 500;
+            }
         }
     }
     

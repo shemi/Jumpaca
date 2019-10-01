@@ -3291,7 +3291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberText: {fileID: 783847563}
-  animationTime: 500
+  animationTime: 1000
   numberFormat: 0
   prefix: 
   playCoinSound: 0
@@ -5375,7 +5375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberText: {fileID: 1228536378}
-  animationTime: 400
+  animationTime: 1000
   numberFormat: 0
   prefix: 
   playCoinSound: 0

@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberText: {fileID: 1117529990}
-  animationTime: 500
+  animationTime: 1500
   numberFormat: 0
   prefix: 
   playCoinSound: 0
